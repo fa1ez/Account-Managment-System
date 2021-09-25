@@ -9,9 +9,13 @@ public class savings extends accounts {
 	void setInterest(double a) {
 		rate=a;
 	}
-	public void calculateInterest() {
+	double getInterest() {
+		return rate;
+	}
+	public double calculateInterest() {
 		double interest=balance*rate;
 		System.out.println("Interets is "+interest);
+		return interest;
 	}
 	
 	public void calculateZakat() {

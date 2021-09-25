@@ -2,7 +2,7 @@ package asm;
 
 import java.util.Scanner;
 
-
+/*
 public class Main {
 	
 	public static void main(String[] args) {
@@ -25,7 +25,7 @@ public class Main {
 				System.out.println("Enter details of customer");
 				System.out.print("Name: ");
 				String nam = myObj.nextLine();
-				System.out.print("Address: ");
+				System.out.print("\nAddress: ");
 				String add = myObj.nextLine();
 				System.out.print("Phone number: ");
 				String ph = myObj.nextLine();
@@ -206,3 +206,4 @@ public class Main {
 		}while(input!=0);
 	}
 }
+*/

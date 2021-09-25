@@ -20,9 +20,11 @@ public class accounts{
 		System.out.println("Deposit of Rs. "+ value + " successful");
 	}
 	public void makewithdrawal(int value) {
+		if(value<balance) {
 		balance=balance-value;
 		transactions++;
 		System.out.println("Withdrawal of Rs. "+ value + " successful");
+		}
 	}
 	
 }

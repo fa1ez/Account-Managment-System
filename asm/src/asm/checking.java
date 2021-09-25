@@ -18,15 +18,17 @@ public class checking extends accounts{
 		System.out.println("Deposit of Rs. "+ value + " successful");
 	}
 	public void makewithdrawal(int value) {
-		if(record_of_trans==0) {
-			balance=balance-10;
-			System.out.println("Transaction fee deducted");
+		if(value<balance) {
+			if(record_of_trans==0) {
+				balance=balance-10;
+				System.out.println("Transaction fee deducted");
+			}
+			else
+				record_of_trans--;
+			balance=balance-value;
+			transactions++;
+			System.out.println("Withdrawal of Rs. "+ value + " successful");
 		}
-		else
-			record_of_trans--;
-		balance=balance-value;
-		transactions++;
-		System.out.println("Withdrawal of Rs. "+ value + " successful");
 	}
 	
 }
